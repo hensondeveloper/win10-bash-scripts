@@ -1,6 +1,7 @@
 #!/bin/bash
 
-which curl
+# Make sure that curl is installed
+which curl > /dev/null
 if [ $? -eq 0 ]; then	
     # Install ffmpeg from the trusty-media PPA
     add-apt-repository -y ppa:mc3man/trusty-media
